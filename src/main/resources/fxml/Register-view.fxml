@@ -11,11 +11,11 @@
 
 <AnchorPane prefHeight="340.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginapplication.Controller.RegisterController">
    <children>
-      <Button layoutX="80.0" layoutY="289.0" mnemonicParsing="false" onAction="#onRegisterButtonClicked" text="Register" />
-      <CheckBox fx:id="termsBox" layoutX="16.0" layoutY="255.0" mnemonicParsing="false" text="I agree to the terms and service" />
+      <Button layoutX="81.0" layoutY="301.0" mnemonicParsing="false" onAction="#onRegisterButtonClicked" text="Register" />
+      <CheckBox fx:id="termsBox" layoutX="16.0" layoutY="268.0" mnemonicParsing="false" text="I agree to the terms and service" />
       <TextField fx:id="usernameField" layoutX="36.0" layoutY="80.0" promptText="username" />
-      <DatePicker editable="false" layoutX="36.0" layoutY="214.0" prefHeight="25.0" prefWidth="149.0" />
-      <Label layoutX="65.0" layoutY="31.0" text="Register" textFill="#db0f1f">
+      <DatePicker editable="false" layoutX="37.0" layoutY="219.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="66.0" layoutY="23.0" text="Register" textFill="#db0f1f">
          <font>
             <Font name="Arial" size="24.0" />
          </font>
@@ -25,5 +25,6 @@
       <Label fx:id="passwordConfirmLabel" layoutX="38.0" layoutY="162.0" text="* required" textFill="RED" />
       <PasswordField fx:id="passwordField" layoutX="36.0" layoutY="127.0" promptText="password" />
       <PasswordField fx:id="passwordConfirmField" layoutX="36.0" layoutY="179.0" promptText="confirm password" />
+      <Label fx:id="termsLabel" layoutX="16.0" layoutY="251.0" text="* required" textFill="RED" />
    </children>
 </AnchorPane>

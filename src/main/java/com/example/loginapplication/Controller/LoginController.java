@@ -21,8 +21,8 @@ public class LoginController {
     @FXML
     private Label isValidLabel;
 
-    private String loginUsername;
-    private String loginPassword;
+    private String loginUsername = "";
+    private String loginPassword = "";
 
     @FXML
     private void onLoginButtonClick(ActionEvent event) throws IOException {
@@ -60,7 +60,16 @@ public class LoginController {
     }
 
     private boolean checkInput() {
+        displayCurrentCredentials();
         return loginUsername.equals(User.getUsername()) && loginPassword.equals(User.getPassword());
+    }
+
+    private void displayCurrentCredentials() {
+        System.out.println("--------------------");
+        System.out.println("login user: " + loginUsername);
+        System.out.println("login password: " + loginPassword);
+        System.out.println("register user: " + User.getUsername());
+        System.out.println("register password: " + User.getPassword());
     }
 
 

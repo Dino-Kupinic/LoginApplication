@@ -4,6 +4,11 @@ public class User {
     private static String username;
     private static String password;
 
+    User() {
+        username = "";
+        password = "";
+    }
+
     public static String getUsername() {
         return username;
     }
