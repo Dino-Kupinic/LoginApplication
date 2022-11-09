@@ -1,13 +1,8 @@
 package com.example.loginapplication.Modell;
 
 public class User {
-    private static String username;
-    private static String password;
-
-    User() {
-        username = "";
-        password = "";
-    }
+    private static String username = "";
+    private static String password = "";
 
     public static String getUsername() {
         return username;

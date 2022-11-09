@@ -10,8 +10,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static com.example.loginapplication.LoginApplication.switchWindow;
 
@@ -56,7 +54,7 @@ public class RegisterController {
     private void returnToNeutralState() {
         usernameLabel.setText("* required");
         passwordLabel.setText("* required");
-        passwordConfirmLabel.setText("* required");
+        usernameLabel.setText("* required");
         termsLabel.setText("* required");
     }
 
@@ -80,7 +78,7 @@ public class RegisterController {
         Parent root = fxmlLoader.load();
 
         //LoginController loginController = fxmlLoader.getController();
-        switchWindow(event, root);
+        switchWindow(event, root, "Login");
     }
 
 

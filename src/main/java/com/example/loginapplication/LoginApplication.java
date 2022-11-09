@@ -32,6 +32,14 @@ public class LoginApplication extends Application {
         stage.show();
     }
 
+    public static void switchWindow(ActionEvent event, Parent root, String title) {
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle(title);
+        stage.show();
+    }
+
     public static void main(String[] args) {
         launch();
     }

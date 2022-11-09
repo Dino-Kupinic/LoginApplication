@@ -3,9 +3,15 @@ package com.example.loginapplication.Controller;
 import com.example.loginapplication.Modell.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+
+import java.io.IOException;
+
+import static com.example.loginapplication.LoginApplication.switchWindow;
 
 public class WelcomeController {
     @FXML
@@ -24,15 +30,22 @@ public class WelcomeController {
     }
 
     @FXML
-    private void handleProgressBar(ActionEvent event) {
+    private void handleProgressBar(ActionEvent event) throws IOException {
         if (i < 5) {
             progress += 0.2;
             welcomeScreenProgressBar.setProgress(progress);
             i++;
         } else {
-            progressButton.setText("Proceed");
+            switchToMainScreen(event);
         }
     }
 
+
+    private void switchToMainScreen(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Main-view.fxml"));
+        Parent root = fxmlLoader.load();
+
+        switchWindow(event, root, "Main");
+    }
 
 }

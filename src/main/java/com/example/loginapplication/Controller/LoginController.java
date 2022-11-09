@@ -48,7 +48,7 @@ public class LoginController {
 
         WelcomeController welcomeController = fxmlLoader.getController();
         welcomeController.displayWelcomeScreen();
-        switchWindow(event, root);
+        switchWindow(event, root, "Welcome");
     }
 
     private void switchToRegisterScreen(ActionEvent event) throws IOException {
@@ -56,7 +56,7 @@ public class LoginController {
         Parent root = fxmlLoader.load();
 
         //RegisterController registerController = fxmlLoader.getController();
-        switchWindow(event, root);
+        switchWindow(event, root, "Register");
     }
 
     private boolean checkInput() {
