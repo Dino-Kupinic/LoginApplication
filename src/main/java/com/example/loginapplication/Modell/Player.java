@@ -5,6 +5,12 @@ public class Player {
     private int energy;
     private int level;
 
+    public Player() {
+        setHealth(5);
+        setEnergy(0);
+        setLevel(1);
+    }
+
     public int getHealth() {
         return health;
     }
