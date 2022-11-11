@@ -1,0 +1,39 @@
+LoginApplication
+JavaFX
+dkupinic
+X	= done
+*	= planned/work in progress
+
+
+Features:
+
+v0.01
+* Login window
+* Welcome screen
+
+
+Loginwindow:
+X username 
+X password
+X login button
+
+Welcomescreen:
+X welcome 'user' 
+X loading bar increase on click
+
+v0.02
+X check for invalid input
+X add register window:
+X -username 
+X -password 
+X -confirm password X check if same as password
+X -birthday 
+X -accept terms X only register if true
+
+X display message if something is missing e.g. "incorrect password" above the textfield in red
+
+v0.03
+* create main application window
+* add options window in main window
+
+

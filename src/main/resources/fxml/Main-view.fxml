@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -14,18 +15,22 @@
          <items>
             <AnchorPane prefHeight="38.0" prefWidth="1352.0">
                <children>
-                  <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Settings" />
-                  <Button layoutX="1267.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Info" />
+                  <Button fx:id="settingsButton" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Settings" />
+                  <Button fx:id="infoButton" layoutX="1267.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Info" />
                </children>
             </AnchorPane>
          </items>
       </ToolBar>
-      <Label layoutX="613.0" layoutY="105.0" text="Welcome">
+      <Label fx:id="welcomeLabel" layoutX="613.0" layoutY="105.0" text="Welcome">
          <font>
             <Font name="Arial Bold" size="32.0" />
          </font>
       </Label>
-      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="651.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="651.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dkupinic-crystal.png" />
+         </image>
+      </ImageView>
       <TextArea editable="false" layoutX="14.0" layoutY="67.0" prefHeight="150.0" prefWidth="140.0" text="How to play:&#10;&#10;W - move up&#10;A - move left&#10;S - move down&#10;D - move right&#10;&#10;" />
    </children>
 </AnchorPane>
