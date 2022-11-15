@@ -1,5 +1,7 @@
 package com.example.loginapplication.Controller;
 
+import javafx.animation.AnimationTimer;
+import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -14,7 +16,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainController {
+public class MainController extends Application {
     @FXML
     private Button settingsButton;
     @FXML
@@ -50,6 +52,16 @@ public class MainController {
 
     @FXML
     private void onInfoButtonClick() {
+
+    }
+
+    @FXML
+    private void flashWelcomeLabel() {
+
+    }
+
+    @Override
+    public void start(Stage stage) {
 
     }
 

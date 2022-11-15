@@ -8,32 +8,43 @@ X	= done
 Features:
 
 v0.01
-* Login window
-* Welcome screen
+X Login window
+X Welcome screen
 
 
 Loginwindow:
-X username 
+X username
 X password
 X login button
 
 Welcomescreen:
-X welcome 'user' 
+X welcome 'user'
 X loading bar increase on click
 
 v0.02
 X check for invalid input
 X add register window:
 X -username 
-X -password 
+X -password
 X -confirm password X check if same as password
-X -birthday 
+X -birthday
 X -accept terms X only register if true
 
 X display message if something is missing e.g. "incorrect password" above the textfield in red
 
 v0.03
-* create main application window
-* add options window in main window
+X create main application window
+X add options window in the main window
+
+v0.04
+* animationTimer to flash Welcome text
+
+
+
+
+v0.05
+* make a movable character in the main application
+* change background based on settings menu background
+
 
 
